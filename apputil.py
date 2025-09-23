@@ -5,6 +5,7 @@ import pandas as pd
 # update/add code below ...
 
 # Exercise 1
+"""_Calculates the nth fibonacci number_"""
 def fib(n):
     # if statement intitially, then add recursive function
     if n == 0:
@@ -22,6 +23,7 @@ print(fib(22))
 
 
 # Exercise 2
+"""_Converts a number to binary_"""
 def to_binary(n):
     # Initial if statement
     if n < 2:
@@ -45,6 +47,7 @@ url = 'https://github.com/melaniewalsh/Intro-Cultural-Analytics/raw/master/book/
 df_bellevue = pd.read_csv(url)
 
 # Task 1:
+"""_Cleans the gender column in the dataset_"""
 def task_1():
     df = df_bellevue.copy()
 
@@ -65,6 +68,7 @@ print(task_1())
 
 
 # Task 2:
+"""_Counts total admissions per year_"""
 def task_2():
     df = df_bellevue.copy()
     # Making data frame
@@ -81,6 +85,7 @@ def task_2():
 print(task_2())
 
 # Task 3:
+"""_Calculates average age for all genders"""
 def task_3():
     df = df_bellevue.copy()
     if "gender" in df.columns:
@@ -100,6 +105,7 @@ def task_3():
 print(task_3())
 
 # Task 4:
+"""_Finds the top 5 professions in the dataset_"""
 def task_4():
     df = df_bellevue.copy()
     if "profession" not in df.columns:
